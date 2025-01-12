@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Elsie:wght@400;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,100..900;1,100..900&family=Elsie:wght@400;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jua&display=swap');
 html {
     scroll-behavior: smooth;
 }
@@ -20,11 +20,23 @@ body {
 }
 
 .title {
-    font-family: 'Elsie', serif;
+    font-family: 'Jua', serif;
+    position: relative;
     font-size: clamp(6rem, 15vw, 15rem);
     color: #006494;
     line-height: 1;
     margin-bottom: 1rem;
+    z-index: 2;
+}
+
+.title::before {
+    content: 'SENIORS';
+    position: absolute;
+    z-index: 1;
+    font-size: clamp(6rem, 15vw, 15rem);
+    color: #00649055;
+    /* font-style: italic; */
+    transform: translate(15px, 10px);
 }
 
 .nav-buttons {
