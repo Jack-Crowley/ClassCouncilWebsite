@@ -210,14 +210,9 @@ body {
 }
 
 .member-email {
-    color: #00A6FB;
+    color: #5FCAFF;
     text-decoration: none;
     transition: color 0.2s ease;
-}
-
-.member-email:hover {
-    color: #0095e4;
-    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -228,5 +223,9 @@ body {
 
     .title {
         font-size: 4rem;
+    }
+
+    #announcements {
+        font-size: 2rem;
     }
 }
